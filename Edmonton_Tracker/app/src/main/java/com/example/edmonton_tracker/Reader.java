@@ -10,9 +10,18 @@ import android.util.Log;
 import com.google.transit.realtime.GtfsRealtime.FeedMessage;
 import com.google.transit.realtime.GtfsRealtime.FeedEntity;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.lang.reflect.Type;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import static android.content.Context.CONNECTIVITY_SERVICE;
 
@@ -20,10 +29,10 @@ import static android.content.Context.CONNECTIVITY_SERVICE;
  * Created by aapae on 3/20/2018.
  */
 
-public class pbReader extends Application{
+public class Reader extends Application{
     private static URL url;
     private static Context c;
-
+    private static ArrayList<String> thislist;
 
     private static FeedMessage feed;
     public void onCreate() {
@@ -49,6 +58,7 @@ public class pbReader extends Application{
 
 
     }
+
 
     public static boolean internet(){
         boolean hasConnection = false;

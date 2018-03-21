@@ -12,7 +12,7 @@ public class CityAlerts extends AppCompatActivity {
         setContentView(R.layout.activity_city_alerts);
     }
     protected void alertBtn(View view) {
-        pbReader.getData allData = new pbReader.getData();
+        Reader.getData allData = new Reader.getData();
         allData.execute("https://data.edmonton.ca/download/rqaa-jae6/application%2Foctet-stream");
 
     }

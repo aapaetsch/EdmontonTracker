@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.edmonton_tracker">
 
-    <uses-sdk android:minSdkVersion="11" />
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -24,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".bus" />
-        <activity android:name=".CityAlerts"></activity>
+        <activity android:name=".CityAlerts"/>
     </application>
 
 </manifest>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.edmontontracker.MainActivity">
+    tools:context="com.example.edmonton_tracker.MainActivity">
 
     <Button
         android:id="@+id/bus_stuff"
